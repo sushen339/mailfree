@@ -252,7 +252,7 @@ export function extractVerificationCode({ subject = '', text = '', html = '' } =
     return '';
   }
 
-  const kw = '(?:verification|one[-\\s]?time|two[-\\s]?factor|2fa|security|auth|login|confirm|code|otp|验证码|校验码|驗證碼|確認碼|認證碼|認証コード|인증코드|코드)';
+  const kw = '(?:verification|one[-\\s]?time|two[-\\s]?factor|2fa|security|auth|login|confirm|code|otp|验证码|校验码|安全代码|安全码|驗證碼|確認碼|認證碼|認証コード|인증코드|코드)';
   const sepClass = "[\\u00A0\\s\\-–—_.·•∙‧'']";
   const codeChunk = `([0-9](?:${sepClass}?[0-9]){3,7})`;
 
